@@ -1,0 +1,17 @@
+SPLITTING INTO TEAMS HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int a,b,r,r1;
+        a=s.nextInt();
+        b=s.nextInt();
+        r=a/b;
+        r1=a%b;
+        System.out.println("The number of students in each team is "+r+" and left out is "+r1);
+    }
+}
