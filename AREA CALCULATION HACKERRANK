@@ -1,0 +1,25 @@
+AREA CALCULATION HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a,b,c;
+        float d;
+        
+        a=s.nextInt();
+        b=s.nextInt();
+        c=s.nextInt();
+        d=s.nextFloat();
+        int area=a*a;
+        System.out.println(area);
+        int area1=b*c;
+        System.out.println(area1);
+        float area2=(float)3.14*d*d;
+        System.out.printf("%.2f",area2);
+        
+    }
+}
