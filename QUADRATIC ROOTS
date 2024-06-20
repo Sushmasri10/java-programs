@@ -1,0 +1,31 @@
+QUADRATIC ROOTS
+
+import java.util.*;
+class Roots{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+int a,b,c;
+a=s.nextInt();
+b=s.nextInt();
+c=s.nextInt();
+float d=b*b-4*a*c;
+if(d<0){
+System.out.println("roots are not possible");
+}
+else{
+float r1=(float)(-b+Math.sqrt(b*b-4*a*c))/(2*a);
+float r2=(float)(-b-Math.sqrt(b*b-4*a*c))/(2*a);
+System.out.println("root1 "+r1);
+System.out.println("root2 "+r2);
+}
+}
+}
+
+
+
+
+
+
+
+
+
