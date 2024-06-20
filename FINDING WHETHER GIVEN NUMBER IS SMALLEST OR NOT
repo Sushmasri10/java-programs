@@ -1,0 +1,17 @@
+FINDING WHETHER GIVEN NUMBER IS SMALLEST OR NOT 
+
+import java.util.*;
+class Smallest{
+public static void main(String args[]){
+Scanner s=new Scanner(System.in);
+int a,b;
+a=s.nextInt();
+b=s.nextInt();
+if(a<b){
+System.out.println("A is smallest"+a);
+}
+else{
+System.out.println("B is smallest"+b);
+}
+}
+}
