@@ -1,0 +1,22 @@
+SUM OR PRODUCT HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int a,b;
+        a=s.nextInt();
+        b=s.nextInt();
+        int sum=a+b;
+        int prod=a*b;
+        if(prod>1000){
+            System.out.println(sum);
+        }
+        else{
+            System.out.println(prod);
+        }
+    }
+}
