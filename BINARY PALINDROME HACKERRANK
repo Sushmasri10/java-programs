@@ -1,0 +1,27 @@
+BINARY PALINDROME HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+       int r,sum=0,temp;    
+       temp=n;    
+  while(n>0){    
+   r=n%2;   
+   sum=(sum*2)+r;    
+   n=n/2;    
+  }    
+  if(temp==sum) {   
+   System.out.println("yes"); 
+  }
+  else   {
+      
+   
+   System.out.println("no");  
+  }
+    }
+}
