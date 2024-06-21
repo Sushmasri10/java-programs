@@ -1,0 +1,20 @@
+STUDENT GROUPS 1 HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int d=n/4;
+        if(n>=100 && n<=200){
+            System.out.printf("%d\n%d\n%d\n%d\n",d,d,d,(d+(n%4)));
+        }
+                              else
+                              {
+                                  System.out.println("INVALID INPUT");
+                              }
+    }
+}
