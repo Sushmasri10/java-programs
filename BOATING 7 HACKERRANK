@@ -1,0 +1,26 @@
+BOATING 7 HACKERRANK
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int a,b,c;
+        a=s.nextInt();
+        b=s.nextInt();
+        c=s.nextInt();
+        int t=b*75+c*30;
+    if(t<=a){
+        System.out.println("Boat is stable");
+        
+    }
+    else
+    {
+        System.out.println("Boat will drown");
+    }
+        
+    }
+}
