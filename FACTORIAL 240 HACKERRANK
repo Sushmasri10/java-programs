@@ -1,0 +1,34 @@
+FACTORIAL 240 HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int r=0,sum=0;
+        while(n>0){
+            r=n%10;
+            n=n/10;
+            sum=sum+r;
+        }
+        if(sum>9){
+            n=sum;
+            sum=0;
+            while(n>0){
+                r=n%10;
+                n=n/10;
+                sum=sum+r;
+            }
+        }
+        int f=1;
+        while(sum>=1){
+            f=f*sum; 
+           sum=sum-1;
+        }
+            
+    System.out.println(f);
+    }
+}
