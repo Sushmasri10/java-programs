@@ -1,0 +1,19 @@
+NEAREST TEN HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int b=a%10;
+        if(b>=5){
+            System.out.println(a-b+10);
+        }
+        else{
+            System.out.println(a-b);
+        }
+    }
+}
