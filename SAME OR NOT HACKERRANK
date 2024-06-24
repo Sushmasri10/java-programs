@@ -1,0 +1,38 @@
+SAME OR NOT HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int i;
+        int n=s.nextInt();
+        int n1=s.nextInt();
+        int a[]=new int[n];
+        int a1[]=new int[n1];
+        for(i=0;i<n;i++){
+            a[i]=s.nextInt();
+        }
+        for( i=0;i<n1;i++){
+            a1[i]=s.nextInt();
+        }
+        if(n!=n1){
+          System.out.println("Not Same");
+      }
+    else {
+        for(i=0;i<n;i++){
+            if(a[i]!=a1[i]){
+                System.out.println("Not Same");
+                break;
+                }
+        }
+        
+        if(i==n){
+            System.out.println("Same");
+        }
+    
+    } 
+    }
+}
