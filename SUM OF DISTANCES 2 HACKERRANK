@@ -1,0 +1,31 @@
+SUM OF DISTANCES 2 HACKERRANK
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int sum=0,i;
+        int a[]=new int[n];
+        for( i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        
+        for(i=0;i<n;i++){
+            if(i+1<n){
+                if(a[i]-a[i+1]<0){
+                    sum=sum-(a[i]-a[i+1]);
+                }
+            
+            else{
+          sum=sum+(a[i]-a[i+1]);
+           }
+        }
+    }  
+        System.out.println(sum);
+            }
+}
