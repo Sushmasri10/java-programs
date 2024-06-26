@@ -1,0 +1,34 @@
+CAT AND MOUSE HACKERRANK
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+ Scanner s=new Scanner(System.in);
+        int t=s.nextInt();
+        int i;
+        int a[]=new int[3];
+        while(t>0){
+        for(i=0;i<3;i++){
+            a[i]=s.nextInt();
+        }
+    
+        if(Math.abs(a[0]-a[2])<Math.abs(a[1]-a[2])){
+          System.out.println("Cat A");
+        }
+        else if(Math.abs(a[0]-a[2])==Math.abs(a[1]-a[2])){
+          System.out.println("Mouse C");
+        }
+        else{
+           System.out.println("Cat B");
+           } 
+        t--;
+     }    
+   }
+}
